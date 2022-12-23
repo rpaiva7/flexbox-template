@@ -1,4 +1,89 @@
+
 *{
     margin: 0;
     padding: 0;
+}
+
+/* Criando contêineres 
+- Implemente um Header seguindo o layout do exercício utilizando flexbox.
+- Garanta que a logo e o botão estejam centralizados verticalmente. */
+
+header{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;  /* alinha na horizontal */
+    padding: 0 10px;
+    height: 10vh;
+    align-items: center; /* align-items centraliza na vertical */
+    background-color: orange;
+}
+
+main{
+    min-height: 80vh;
+    background-color: beige;
+}
+
+footer{
+    border: 1px solid black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+.conteiner{
+    display: flex;
+    background-color: lightgray;
+    gap: 10px;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.parte{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none
+}
+
+li{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: beige;
+}
+
+/* Exercício de fixação - Utilizando o site do exercício anterior, implemente no conteúdo principal da sua página:
+  - 8 cards idênticos que contenham uma imagem e uma descrição. Sugerimos uma imagem com medidas 160px x 160px.
+  - Faça com que esses cards quebrem a linha caso falte espaço disponível.
+  - É obrigatório estarem num container com display flex. */
+
+img{
+    height: 160px;
+    width: 160px;
+}
+
+button{
+    margin: 10px;
+    padding: 3px;
+}
+
+.fixacao{
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagens{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
 }
